@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+
+.navbar {
+  display: flex; align-items: center; gap: 24px;
+  background: #0f172a; border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 0 32px; height: 60px; position: sticky; top: 0; z-index: 100;
+  font-family: 'Sora', sans-serif;
+}
+.nav-brand { color: #fff; font-weight: 700; font-size: 18px; margin-right: 16px; }
+.nav-brand span { color: #3b82f6; }
+.nav-links { display: flex; gap: 4px; flex: 1; }
+.nav-link {
+  color: rgba(255,255,255,0.5); text-decoration: none;
+  padding: 6px 14px; border-radius: 8px; font-size: 14px;
+  transition: all 0.15s;
+}
+.nav-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+.nav-link.active { color: #3b82f6; background: rgba(59,130,246,0.12); font-weight: 600; }
+.nav-user { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+.user-name { color: rgba(255,255,255,0.7); font-size: 13px; }
+.role-badge {
+  font-size: 11px; font-weight: 600; padding: 2px 8px;
+  border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.role-badge.admin  { background: rgba(239,68,68,0.2);   color: #f87171; }
+.role-badge.teacher{ background: rgba(245,158,11,0.2);  color: #fbbf24; }
+.role-badge.student{ background: rgba(16,185,129,0.2);  color: #34d399; }
+.logout-btn {
+  background: rgba(239,68,68,0.15); border: 1px solid rgba(239,68,68,0.3);
+  color: #f87171; padding: 5px 14px; border-radius: 8px;
+  font-size: 13px; cursor: pointer; font-family: 'Sora', sans-serif;
+  transition: all 0.15s;
+}
+.logout-btn:hover { background: rgba(239,68,68,0.3); }
